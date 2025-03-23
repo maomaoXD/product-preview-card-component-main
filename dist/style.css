@@ -1,3 +1,41 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: hsla(0, 96%, 49%, 0.926);
+  margin: 0;
+  padding: 0;
+  background-color: --color-bg;
+  color: var(--color-grey);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: hsl(30, 38%, 92%);
+  --color-black: hsl(212, 21%, 14%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-accent: hsl(158, 36%, 37%);
+  --color-highlight: hsl(158, 42%, 18%);
 }/*# sourceMappingURL=style.css.map */
