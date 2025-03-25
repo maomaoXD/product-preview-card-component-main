@@ -1,0 +1,9 @@
+@use '../util/' as u;
+
+
+main {
+    display: grid;
+    place-content: center;
+    min-height: 100dvh;
+    padding: u.rem(20);
+}

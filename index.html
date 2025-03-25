@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <title>Frontend Mentor | Product preview card component</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="dist/style.css">
@@ -14,7 +16,37 @@
 </head>
 <body>
 
-<h1>test</h1>  
+  <main>
+
+    <article class="product">
+      <picture class="product__img">
+        <img src="images/image-product-mobile.jpg" alt="abrielle Essence Eau De Parfum">
+      </picture>
+
+      <div class="product__content">
+        <p class="product__category">Perfume</p>
+
+        <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
+
+        <p class="product__desc">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+         
+        <div class="product__price">
+
+          <p class="product__price__discount"><span class="visually-hidden">Discount price:</span>$149.99</p>
+          <p class="product__price__original"><span class="visually-hidden">Original price:</span><s>$169.99</s></p>
+
+        </div>
+
+        <button class="btn product__btn">Add to Cart</button>
+
+        
+      </div>
+
+    </article>
+
+  </main>
+
+  
   
   
 </body>

@@ -1,0 +1,74 @@
+@use '../util' as u;
+
+.product {
+    background-color: var(--color-white);
+    border-radius: u.rem(10);
+    overflow: hidden;
+
+    &__content {
+        display: grid;
+        padding:u.rem(20);  
+    }
+
+    &__category {
+        font-size: u.rem(12);
+        text-transform: uppercase;
+        letter-spacing: u.rem(4);
+    }
+
+    &__title {
+        font-family: u.$primary-font;
+        font-size: u.rem(32);
+        color: var(--color-black);
+        line-height: 1.1;
+        margin-block-end: u.rem(16);
+    }
+
+    &__desc {
+        font-size: u.rem(14);
+        line-height: 1.5;
+        
+    }
+
+    &__price {
+        display: flex;
+        flex-wrap: wrap;
+        gap: u.rem(16);
+        align-items: center;
+        
+        &__discount {
+            font-family: u.$primary-font;
+            font-size: u.rem(32);
+            font-weight: u.$fw-bold;
+            color: var(--color-accent);
+            margin-block: 0;
+
+        }
+
+        &__original {
+            font-size: u.rem(10);
+            margin-block: 0;
+        }
+    }
+
+    &__btn {
+        margin-top: u.rem(10);
+        cursor: pointer;
+        
+        font-family: u.$base-font;
+        background-color: var(--color-accent);
+        color: var(--color-white);
+    }
+
+    
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
