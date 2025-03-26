@@ -52,16 +52,43 @@
     }
 
     &__btn {
-        margin-top: u.rem(10);
+        margin-top: u.rem(15);
         cursor: pointer;
-        
         font-family: u.$base-font;
+        font-weight: u.$fw-bold;
         background-color: var(--color-accent);
         color: var(--color-white);
-    }
-
+        text-decoration: none;
+        padding:u.rem(15) ;
+        border: none;
+        border-radius: u.rem(5);
+        gap: u.rem(10);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     
+        
+        &:is(:hover, :focus) {
+            background-color: var(--color-highlight);
+        }
+
+        &[data-icon="shopping-cart"]::before {
+            content: "a";
+            background-image: url("../../images/icon-cart.svg");
+            width: u.rem(15);
+            height: u.rem(16);
+           
+        }
+        
+    }
+    
+
+
 }
+
+
+
+
 
 .visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
