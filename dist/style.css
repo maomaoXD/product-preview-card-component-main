@@ -61,13 +61,27 @@ main {
 }
 
 .product {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: var(--color-white);
   border-radius: 0.625rem;
   overflow: hidden;
+  max-width: 37.5rem;
+  min-width: 23.4375rem;
+}
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .product__content {
   display: grid;
   padding: 1.25rem;
+}
+@media (min-width: 600px) {
+  .product__content {
+    padding: 1.875rem;
+  }
 }
 .product__category {
   font-size: 0.75rem;

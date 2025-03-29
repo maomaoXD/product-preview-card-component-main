@@ -1,13 +1,25 @@
 @use '../util' as u;
 
 .product {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: var(--color-white);
     border-radius: u.rem(10);
     overflow: hidden;
+    max-width: u.rem(600);
+    min-width: u.rem(375);
+
+    @media (min-width: 600px){
+        grid-template-columns: 1fr 1fr;
+    }
 
     &__content {
         display: grid;
-        padding:u.rem(20);  
+        padding:u.rem(20);
+        
+        @media (min-width: 600px){
+            padding:u.rem(30);
+        }
     }
 
     &__category {
